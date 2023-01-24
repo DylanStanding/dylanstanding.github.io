@@ -12,7 +12,7 @@ Features:
 
 Getting Started:
 
-    - Visit [DylanStanding.ca](url)
+    - Visit [DylanStanding.ca](dylanstanding.ca)
             OR
     - Clone or download the repository
     - Open the index.html file in a web browser
