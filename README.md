@@ -12,6 +12,8 @@ Features:
 
 Getting Started:
 
+    - Visit DylanStanding.ca
+            OR
     - Clone or download the repository
     - Open the index.html file in a web browser
 
