@@ -156,6 +156,7 @@ a:focus {
 }
 
 .content__link {
+	font-family: 'Georama', sans-serif;
 	font-size: 1.1rem;
 	background-color: #ffffff;
  	color: rgb(0, 0, 0);
