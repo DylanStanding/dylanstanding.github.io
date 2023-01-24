@@ -156,8 +156,6 @@ a:focus {
 }
 
 .content__link {
-	text-decoration: underline;
-	font-family: 'Monaco', Monospace;
 	font-size: 1.1rem;
 	background-color: #ffffff;
  	color: rgb(0, 0, 0);
