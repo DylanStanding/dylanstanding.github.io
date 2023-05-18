@@ -1,0 +1,44 @@
+body {
+    background-color: #000000; /* Black background */
+  }
+  
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  
+  .photo {
+    flex-basis: 22%; /* Adjust the width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  
+  .photo img,
+  .photo video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #FFFFFF; /* White border */
+    box-sizing: border-box;
+    padding: 10px; /* Added spacing between the border and the photo */
+  }
+  
+  
