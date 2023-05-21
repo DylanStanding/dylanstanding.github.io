@@ -1,0 +1,80 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Radiotechnika', sans-serif;
+  }
+  
+  @font-face {
+    font-family: 'Radiotechnika';
+    src: url('../fonts/Radiotechnika.otf') format('opentype');
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  .audio-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    padding: 0;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .play {
+    background-image: url("../Images/play.png");
+  }
+  
+  .play.paused {
+    background-position: -60px 0;
+  }
+  
+  .progress-bar-container {
+    width: 300px;
+    height: 5px;
+    background-color: #555;
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #088bea;
+  }
+  
+  .time-left {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  
+  audio {
+    display: none;
+  }
+
+  
+  

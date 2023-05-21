@@ -130,6 +130,16 @@ body {
     position: fixed;
     text-decoration: none;
     font-size: 1.5rem;
+    top: calc(92% - 150px);
+    left: calc(69% - 150px);
+    font-family: 'Georama', sans-serif;
+    color: rgb(255, 255, 255);
+  }
+
+  .music {
+    position: fixed;
+    text-decoration: none;
+    font-size: 1.5rem;
     top: calc(82% - 150px);
     left: calc(73% - 150px);
     font-family: 'Georama', sans-serif;
