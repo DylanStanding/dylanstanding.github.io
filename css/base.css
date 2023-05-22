@@ -247,4 +247,12 @@ canvas {
 		height: 100vh;
 		justify-content: center;
 	}
+	.letter,
+	 .letter.behind,
+	 .letter.in,
+	.letter.out {
+		display: none;
+	  }
+	  
+
 }
