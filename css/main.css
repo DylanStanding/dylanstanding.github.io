@@ -177,12 +177,12 @@ body {
   }
   
   .home{
-    top: calc(65% - 150px);
+    top: calc(60% - 150px);
     left: calc(90% - 150px);
   }
 
   .portfolio{
-    top: calc(75% - 150px);
+    top: calc(70% - 150px);
     left: calc(90% - 150px);
   }
   .art{
@@ -191,11 +191,11 @@ body {
 
   }
   .contact{
-    top: calc(95% - 150px);
+    top: calc(90% - 150px);
     left: calc(90% - 150px);
   }
   .music {
-    top: calc(105% - 150px);
+    top: calc(100% - 150px);
     left: calc(90% - 150px);
   }
   body {
