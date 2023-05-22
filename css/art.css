@@ -17,6 +17,7 @@ body {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
   align-items: stretch;
@@ -24,11 +25,12 @@ body {
 }
 
 .photo {
-  flex-basis: 22%; /* Adjust the width as needed */
+  flex-basis: 100%; /* Full width for mobile */
   padding: 10px;
   box-sizing: border-box;
   align-items: stretch;
   align-content: stretch;
+  cursor: pointer;
 }
 
 .photo img,
@@ -41,66 +43,61 @@ body {
   padding: 10px; /* Added spacing between the border and the photo */
 }
 
-/* Media Queries */
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
-/* Mobile Styles */
-@media (max-width: 480px) {
+.modal-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: transparent;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #FFFFFF; /* White border */
+  box-sizing: border-box;
+  padding: 10px; /* Added spacing between the border and the photo */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  /* Styles for tablets and larger screens */
   .photo {
-    flex-basis: 50%;
-    padding-bottom: 0;
-    position: relative;
+    flex-basis: 22%; /* Adjust the width as needed */
   }
-
-  .photo img,
-  .photo video {
-    width: 100%;
-    height: auto;
-    border: none;
-    padding: 0;
-    object-fit: cover;
+  @media only screen and (max-width: 375px) {
+    /* Styles for iPhone */
+    .photo {
+      flex-basis: 50%; /* Full width for mobile */
+    }
   }
-
-  .photo img {
-    cursor: pointer;
-  }
-
-  .photo .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .photo .modal img,
-  .photo .modal video {
-    max-width: 65%;
-    height: auto;
-  }
-
-  .photo .modal .modal-exit {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #FFFFFF;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .photo .modal.active {
-    display: flex;
+  
+  @media only screen and (max-width: 360px) {
+    /* Styles for Samsung phones */
+    .photo {
+      flex-basis: 50%; /* Full width for mobile */
+    }
   }
 }
 
-/* Tablet Styles */
-@media (max-width: 768px) {
-  .photo {
-    flex-basis: 45%;
-  }
-}
