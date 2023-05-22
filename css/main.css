@@ -175,4 +175,31 @@ body {
   .welcome {
     display: none;
   }
+  
+  .home{
+    top: calc(65% - 150px);
+    left: calc(90% - 150px);
+  }
+
+  .portfolio{
+    top: calc(75% - 150px);
+    left: calc(90% - 150px);
+  }
+  .art{
+    top: calc(85% - 150px);
+    left: calc(90% - 150px);
+
+  }
+  .contact{
+    top: calc(95% - 150px);
+    left: calc(90% - 150px);
+  }
+  .music {
+    top: calc(105% - 150px);
+    left: calc(90% - 150px);
+  }
+  body {
+    overflow: hidden;
+  }
+
 }
