@@ -169,3 +169,25 @@ body {
     pointer-events: none;
     cursor: none;
   }
+
+  @media (max-width: 767px) {
+    .main {
+      top: calc(35% - 150px);
+      left: calc(35% - 150px);
+      width: 300px;
+      height: 300px;
+    }
+  
+    .welcome {
+      display: none;
+    }
+  
+    .home,
+    .portfolio,
+    .art,
+    .contact,
+    .music {
+      top: calc(50% - 150px);
+      left: calc(50% - 150px);
+    }
+  }
