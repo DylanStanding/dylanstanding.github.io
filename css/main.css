@@ -171,8 +171,18 @@ body {
   }
 
   /* Media Query for mobile devices */
-@media (max-width: 767px) {
-  .welcome {
-    display: none;
+  @media (max-width: 375px) and (min-width: 768px) {
+    .home,
+    .portfolio,
+    .art,
+    .contact,
+    .music {
+      flex-basis: 50%;
+    }
+  
+    /* Revert mobile changes */
+    .welcome {
+      display: block;
+    }
   }
-}
+
