@@ -20,87 +20,105 @@
     <div class="art"></div>
 
     <div class="container">
-        <div class="grid">
+      <div class="grid">
         <div class="row">
           <div class="photo">
-            <img src="./Images\1.jpg" alt="Photo 1">
+            <img src="./Images/1.jpg" alt="Photo 1" onclick="openModal(this)">
           </div>
           <div class="photo">
-            <img src="./Images\2.jpg" alt="Photo 2">
+            <video autoplay loop muted>
+              <source src="./Images\vid1.mov" type="video/mp4" onclick="openModal(this)" >
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class="photo">
-            <img src="./Images\3.jpg" alt="Photo 3">
+            <img src="./Images/3.jpg" alt="Photo 3" onclick="openModal(this)">
           </div>
           <div class="photo">
-            <img src="./Images\4.jpg" alt="Photo 4">
+            <img src="./Images/4.jpg" alt="Photo 4" onclick="openModal(this)">
           </div>
         </div>
+        <!-- Rest of the code remains the same -->
+      </div>
     </div>
         <div class="row">
           <div class="photo">
             <video autoplay loop muted>
-                <source src="./Images\vid1.mov" type="video/mp4">
+                <source src="./Images\vid1.mov" type="video/mp4" onclick="openModal(this)" >
                 Your browser does not support the video tag.
               </video>
           </div>
           <div class="photo">
-            <img src="./Images\6.JPG" alt="Photo 6">
+            <img src="./Images\6.JPG" alt="Photo 6" onclick="openModal(this)">
           </div>
           <div class="photo">
-            <img src="./Images\5.JPG" alt="Photo 7">
+            <img src="./Images\5.JPG" alt="Photo 7" onclick="openModal(this)">
           </div>
           <div class="photo">
-            <img src="./Images\7.JPG" alt="Photo 8">
+            <img src="./Images\7.JPG" alt="Photo 8" onclick="openModal(this)">
           </div>
         </div>
         <div class="row">
             <div class="photo">
               <video autoplay loop muted>
-                <source src="./Images\vid2.mov" type="video/mp4">
+                <source src="./Images\vid2.mov" type="video/mp4" onclick="openModal(this)">
                 Your browser does not support the video tag.
               </video>
             </div>
             <div class="photo">
-              <img src="./Images\8.JPG" alt="Photo 6">
+              <img src="./Images\8.JPG" alt="Photo 6" onclick="openModal(this)">
             </div>
             <div class="photo">
-              <img src="./Images\9.JPG" alt="Photo 7">
+              <video autoplay loop muted>
+                <source src="./Images\vid2.mov" type="video/mp4" onclick="openModal(this)">
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="photo">
-              <img src="./Images\11.JPG" alt="Photo 8">
-            </div>
-          </div>
-          <div class="row">
-            <div class="photo">
-              <img src="./Images\12.JPGG" alt="Photo 5">
-            </div>
-            <div class="photo">
-              <img src="./Images\13.JPG" alt="Photo 6">
-            </div>
-            <div class="photo">
-              <img src="#" alt="Photo 7">
-            </div>
-            <div class="photo">
-              <img src="photo8.jpg" alt="Photo 8">
+              <img src="./Images\11.JPG" alt="Photo 8" onclick="openModal(this)">
             </div>
           </div>
           <div class="row">
             <div class="photo">
-              <img src="photo5.jpg" alt="Photo 5">
+              <img src="./Images\12.JPGG" alt="Photo 5" onclick="openModal(this)">
             </div>
             <div class="photo">
-              <img src="photo6.jpg" alt="Photo 6">
+              <img src="./Images\13.JPG" alt="Photo 6" onclick="openModal(this)">
             </div>
             <div class="photo">
-              <img src="photo7.jpg" alt="Photo 7">
+              <img src="#" alt="Photo 7" onclick="openModal(this)">
             </div>
             <div class="photo">
-              <img src="photo8.jpg" alt="Photo 8">
+              <img src="photo8.jpg" alt="Photo 8" onclick="openModal(this)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="photo">
+              <img src="photo5.jpg" alt="Photo 5" onclick="openModal(this)">
+            </div>
+            <div class="photo">
+              <img src="photo6.jpg" alt="Photo 6" onclick="openModal(this)">
+            </div>
+            <div class="photo">
+              <img src="photo7.jpg" alt="Photo 7" onclick="openModal(this)">
+            </div>
+            <div class="photo">
+              <img src="photo8.jpg" alt="Photo 8" onclick="openModal(this)">
             </div>
           </div>
         <!-- Repeat the above structure for additional rows -->
       </div>
 
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modal-image" src="" alt="Selected Photo">
+        </div>
+      </div>
+
+
+
+  <script src="js\art.js"></script>
       <script src="js\vid.js"></script>
 </body>
 </html>
