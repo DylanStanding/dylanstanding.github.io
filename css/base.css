@@ -248,27 +248,3 @@ canvas {
 		justify-content: center;
 	}
 }
-
-@media screen and (max-width: 767px) {
-	.content__title {
-	  font-size: 8vw;
-	}
-	
-	.frame {
-	  padding: 2rem 3vw;
-	}
-	
-	.frame__title {
-	  font-size: 1.5rem;
-	}
-	
-	.frame__links a {
-	  margin: 0 0.5rem 0.5rem;
-	}
-	
-	.text {
-	  width: 90%;
-	  margin-left: -45%;
-	  margin-top: -20px;
-	}
-  }
