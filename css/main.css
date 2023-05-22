@@ -200,11 +200,11 @@ body {
 
   }
   .contact{
-    top: calc(90% - 150px);
+    top: calc(100% - 150px);
     left: calc(90% - 150px);
   }
   .music {
-    top: calc(100% - 150px);
+    top: calc(90% - 150px);
     left: calc(90% - 150px);
   }
   body {
