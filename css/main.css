@@ -169,3 +169,10 @@ body {
     pointer-events: none;
     cursor: none;
   }
+
+  /* Media Query for mobile devices */
+@media (max-width: 767px) {
+  .welcome {
+    display: none;
+  }
+}
