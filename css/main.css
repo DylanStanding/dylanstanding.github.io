@@ -169,3 +169,18 @@ body {
     pointer-events: none;
     cursor: none;
   }
+
+  @media (max-width: 480px) {
+    .photo {
+      flex-basis: 50%;
+      padding-bottom: 0;
+      position: relative;
+    }
+  }
+
+  /* Tablet Styles */
+@media (max-width: 768px) {
+  .photo {
+    flex-basis: 45%;
+  }
+}
