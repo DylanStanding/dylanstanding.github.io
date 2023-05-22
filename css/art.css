@@ -17,6 +17,7 @@ body {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
   align-items: stretch;
@@ -24,7 +25,7 @@ body {
 }
 
 .photo {
-  flex-basis: 22%; /* Adjust the width as needed */
+  flex-basis: 100%; /* Full width for mobile */
   padding: 10px;
   box-sizing: border-box;
   align-items: stretch;
@@ -64,7 +65,7 @@ body {
 }
 
 .modal-content img {
-  width: auto;
+  width: 100%;
   height: auto;
   border: 3px solid #FFFFFF; /* White border */
   box-sizing: border-box;
@@ -80,5 +81,23 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-
+@media (min-width: 768px) {
+  /* Styles for tablets and larger screens */
+  .photo {
+    flex-basis: 22%; /* Adjust the width as needed */
+  }
+  @media only screen and (max-width: 375px) {
+    /* Styles for iPhone */
+    .photo {
+      flex-basis: 50%; /* Full width for mobile */
+    }
+  }
+  
+  @media only screen and (max-width: 360px) {
+    /* Styles for Samsung phones */
+    .photo {
+      flex-basis: 50%; /* Full width for mobile */
+    }
+  }
+}
 
