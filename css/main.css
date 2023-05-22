@@ -1,6 +1,11 @@
 body {
     background-color: #000;
   }
+
+  @font-face {
+    font-family: 'Baunk';
+    src: url('../fonts/Baunk.otf') format('opentype');
+  }
   
   .main {
     position: absolute;
@@ -79,8 +84,12 @@ body {
 
   .welcome {
     position: fixed;
-    top: calc(25% - 150px);
-    left: calc(49% - 150px);
+    text-decoration: none;
+    font-size: 4rem;
+    top: calc(27% - 150px);
+    left: calc(48% - 150px);
+    font-family: 'Baunk', sans-serif;
+    color: #00B9FC;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 
