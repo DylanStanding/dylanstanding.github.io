@@ -91,6 +91,7 @@ body {
       font-family: 'Baunk', sans-serif;
       color: black;
       opacity: 1;
+      filter: blur(80px);
       transition: opacity 0.5s ease-in-out;
       text-shadow:
         0 0 5px #040404,
