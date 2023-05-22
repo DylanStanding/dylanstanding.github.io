@@ -82,29 +82,26 @@ body {
     }
   
 
-  .welcome {
-    position: fixed;
-    text-decoration: none;
-    font-size: 4rem;
-    top: calc(27% - 150px);
-    left: calc(48% - 150px);
-    font-family: 'Baunk', sans-serif;
-    color: #00B9FC;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-
-    /*    text-shadow:
-      0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 40px #0ff,
-      0 0 80px #0ff,
-      0 0 90px #0ff,
-      0 0 100px #0ff,
-      0 0 150px #0ff;
-      */
-
-  }
+    .welcome {
+      position: fixed;
+      text-decoration: none;
+      font-size: 4rem;
+      top: calc(27% - 150px);
+      left: calc(48% - 150px);
+      font-family: 'Baunk', sans-serif;
+      color: black;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      text-shadow:
+        0 0 5px #040404,
+        0 0 10px #6e0c95,
+        0 0 20px #000000,
+        0 0 40px rgb(0, 174, 255),
+        0 0 80px rgb(0, 174, 255),
+        0 0 90px #088bea,
+        0 0 100px #088bea,
+        0 0 150px #088bea;
+    }
 
   .transparent {
     opacity: 0;
