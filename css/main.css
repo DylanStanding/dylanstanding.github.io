@@ -110,66 +110,43 @@ body {
     cursor: none;
   }
 
-  .home {
-    position: fixed;
-    text-decoration: none;
-    font-size: 1.5rem;
-    top: calc(52% - 150px);
-    left: calc(72% - 150px);
-    font-family: 'Georama', sans-serif;
-    color: rgb(255, 255, 255);
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    
-  }
+  .nav-link {
+  position: fixed;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Georama', sans-serif;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 20px; /* Adjust the value for the desired pill shape */
+  background-color: rgba(50, 50, 50, 0.8); /* Dark grey semi-transparent color */
+}
 
-  .portfolio {
-    position: fixed;
-    text-decoration: none;
-    font-size: 1.5rem;
-    top: calc(62% - 150px);
-    left: calc(74% - 150px);
-    font-family: 'Georama', sans-serif;
-    color: rgb(255, 255, 255);
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
+.home {
+  top: calc(52% - 150px);
+  left: calc(72% - 150px);
+}
 
-  .art {
-    position: fixed;
-    text-decoration: none;
-    font-size: 1.5rem;
-    top: calc(72% - 150px);
-    left: calc(74% - 150px);
-    font-family: 'Georama', sans-serif;
-    color: rgb(255, 255, 255);
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .contact {
-    position: fixed;
-    text-decoration: none;
-    font-size: 1.5rem;
-    top: calc(92% - 150px);
-    left: calc(69% - 150px);
-    font-family: 'Georama', sans-serif;
-    color: rgb(255, 255, 255);
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
+.portfolio {
+  top: calc(62% - 150px);
+  left: calc(74% - 150px);
+}
 
-  .music {
-    position: fixed;
-    text-decoration: none;
-    font-size: 1.5rem;
-    top: calc(82% - 150px);
-    left: calc(73% - 150px);
-    font-family: 'Georama', sans-serif;
-    color: rgb(255, 255, 255);
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
+.art {
+  top: calc(72% - 150px);
+  left: calc(74% - 150px);
+}
+
+.contact {
+  top: calc(92% - 150px);
+  left: calc(69% - 150px);
+}
+
+.music {
+  top: calc(82% - 150px);
+  left: calc(73% - 150px);
+}
+
 
   .fade-out {
     opacity: 0;
